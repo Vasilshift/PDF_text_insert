@@ -7,7 +7,7 @@ import java.io.File;
 
 public class EncriptingPDF {
 
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) throws Exception {
         //Loading an existing document
         File file = new File("C:/PdfBox_Examples/sample.pdf");
         PDDocument document = PDDocument.load(file);

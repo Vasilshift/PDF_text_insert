@@ -8,7 +8,7 @@ import java.io.File;
  */
 public class AddJavaScript {
 
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) throws Exception {
 
         //Loading an existing file
         File file = new File("C:/PdfBox_Examples/new.pdf");

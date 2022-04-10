@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class AddMultipleLines {
-    public static void main(String args[]) throws IOException {
+    public static void main(String[] args) throws IOException {
 
         //Loading an existing document
         File file = new File("C:/PdfBox_Examples/new.pdf");

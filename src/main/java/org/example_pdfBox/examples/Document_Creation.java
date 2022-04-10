@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Document_Creation {
 
-    public static void main (String args[]) throws IOException {
+    public static void main (String[] args) throws IOException {
 
         //Creating PDF document object
         PDDocument document = new PDDocument();

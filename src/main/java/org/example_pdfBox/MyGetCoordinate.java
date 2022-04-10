@@ -21,51 +21,28 @@ public class MyGetCoordinate extends PDFTextStripper {
         File file = new File("C:/updatepdf/исходники/исходник1.pdf");
         PDDocument document = PDDocument.load(file);
 
-        //List<String> text = Collections.singletonList(pdfStripper.getText(document));
-
-//        for (String t : text ) {
-//            Pattern pattern = Pattern.compile(textToFind, Pattern.CASE_INSENSITIVE);
-//            Matcher matcher = pattern.matcher(t);
-//            //System.out.println(t);
-//            boolean matchFound = matcher.find();
-//            if(matchFound) {
-//                System.out.println("Match found");
-//
-//            } else {
-//                System.out.println("Match not found");
-//            }
-//        }
-
-
         PDFTextStripper stripper = new MyGetCoordinate();
-//        stripper.setSortByPosition( true );
-//        stripper.setStartPage( 0 );
-//        stripper.setEndPage( document.getNumberOfPages() );
-        //TextPosition textPosition = new TextPosition();
-        //List<TextPosition>  textPositions = new ArrayList<>();
         Writer dummy = new OutputStreamWriter(new ByteArrayOutputStream());
         stripper.writeText(document, dummy);
 
-
-        //FindTextPosition findTextPosition = new FindTextPosition();
-
-        //findTextPosition.writeString(textToFind, textPositions);
         document.save("C:/updatepdf/исходники/исходник1.pdf");
         document.close();
-
-
-        //File file = new File("C:/updatepdf/исходники/исходник1.pdf");
-
-        //PDDocument document1 = PDDocument.load(file);
-        //PDPage page = document1.getPage(0);
-        //PDPageContentStream contentStream = new PDPageContentStream(document1, page);
-
 
     }
 
 
-//    @Override /* this is questionable, not sure if needed... */
 //    protected void processTextPosition(TextPosition text) {
+//
+//        if (text.equalsIgnoreCase(textToFind)) {
+//
+//            float yDirAdj = textPositions.get(string.length() - 7).getYDirAdj();
+//            float xDirAdj = textPositions.get(string.length() - 7).getXDirAdj();
+//            System.out.println(yDirAdj);
+//            System.out.println(xDirAdj);
+//            yDirAdjForInsert = (float) (yDirAdj + 0.5);
+//        }
+//
+//
 //        if (text.equals(textToFind)) {
 //            System.out.println("String[" + text.getXDirAdj() + ","
 //                    + text.getYDirAdj() + " fs=" + text.getFontSize() + " xscale="
